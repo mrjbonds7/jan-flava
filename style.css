@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*logo img*/
+.logo{
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f082;
+    border-radius: 15px;
+}
+/*landing page / background img*/
+.one{
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.416) url(landding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f0f0f0;
+    background-blend-mode: soft-light; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*about us background image*/
+.two{
+    background: rgba(0, 0, 0, 0.416) url(about\ us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f0f0f0;
+    background-blend-mode: soft-light; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*our team background image*/
+.thead{
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.416) url(team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f0f0f0;
+    background-blend-mode: soft-light; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*conttuct us*/
+.four{
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.416) url(landding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f0f0f0;
+    background-blend-mode: soft-light; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*navbar*/
+nav{
+    background-color: rgba(255, 255, 255, 0.174);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0, 0.1);
+    position: sticky;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 45px;
+}
+/*nav buttons*/
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+/*button efects*/
+nav a:hover{
+    background-color: #9640405e;
+    transition-delay: 10ms;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+/*side bar*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+/*media listning*/
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+/*welcome text*/
+section{
+    padding-top: 230px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h3, p{
+    text-align: center;
+}
+
+h3{
+    font-size: 27px;
+    padding-right: 339px;
+}
+
+h1{
+    font-size: 65px;
+}
+
+p{
+    font-size: 25px;
+    margin-left: 300px;
+}
+/*about us*/
+
+.two{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 200;
+}
+
+.a{
+    margin-bottom: 50px;
+    font-size: 56px;
+}
+
+/*our team*/
+
+.container {
+    margin: 10px 20px;
+    color: white;
+}
+
+.heading {
+    font-size: 60px;
+    color: white;
+}
+
+.heading span {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.profiles {
+    display: -webkit-flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+}
+
+.profile {
+    flex-basis: 260px;
+}
+
+.profile .profile-img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile:hover .profile-img {
+    filter: grayscale(0);
+}
+
+.user-name {
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.profile h5 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+}
+
+.profile p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+

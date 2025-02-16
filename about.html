@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="two">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">About US</a></li>
+            <li><a href="our team.html">Our Team</a></li>
+            <li><a href="conttuct.html">Conttuct US</a></li>
+            <li><a href="#">Gallerry</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="index.html"><img class="logo" src="logo.png.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="about us.jpg">About US</a></li>
+            <li class="hideOnMobile"><a href="our team.html">Our Team</a></li>
+            <li class="hideOnMobile"><a href="conttuct.html">Conttuct US</a></li>
+            <li class="hideOnMobile"><a href="#">Gallerry</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div id="about us">
+        <section class="two">
+            <h1 class="a">About Us</h1>
+            <p1>Founded in 2021, <strong>FLAVA DOT GLOBAL</strong> is a local company with global ambitions.
+            <br><br>
+            with a collective 30 years of management and R&D experience, we bring a wealth of experience to the world of flavour production. </p1>
+            <br><br>
+            <p1>we are a flavour + seasonings manufacturer for the food and snack industry. <br>we specialise in creating <strong>BESPOKE</strong> and <strong>innovative</strong> <blod>Flavours</blod> for each and every one of our <strong>Customers.</strong>
+            we take pride in our <strong>FLEXIBLE and RELIABLE</strong> production processes, ensuring that we meet the diverse needs of our <bold>Clients</bold><br>
+            At the heart of our business is personalized customer service, we believe in building strong relationships with our clients, understanding their unique requirements, and delivering exceptional results.</p1>
+            <p1>To enhance safety and efficieny, we have implemented new food safety technology to provide our customers with the highest quality products. <br> our commitment to quality is evident in our compliance with <blod>FSSC 22000 V5.1</blod> quality standards.</p1>
+        </section>
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
